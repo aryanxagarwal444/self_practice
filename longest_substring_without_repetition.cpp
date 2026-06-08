@@ -7,7 +7,7 @@ using namespace std;
         int c=0;
         cin>>s;
         int l;
-        string n[100]="";
+        string n[s.length()]="";
         ls=s[0];
         n[c]=ls;
         for(int i=1; i<s.length(); i++){
@@ -32,7 +32,14 @@ using namespace std;
                         // cout<<n[c];
                         ls.clear();
                         // cout<<ls<<endl;
-                        ls=s[i];
+                        ls=s[i-1];
+                        i--;
+                        // cout<<ls;
+                        if(s[i]==s[i+1]){
+                            ls=s[i];
+                            // cout<<ls;
+                            i++;
+                        }
                         // cout<<ls;
                         c++;
                         break;

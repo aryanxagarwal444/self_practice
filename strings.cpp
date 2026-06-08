@@ -22,10 +22,10 @@ int main(){
     //  s.append("sfs");
     // char ch = str.at(0);
     // cout<<ch;
-    // cout<<str.substr(2,2);// starts printing from index 2 and prints the specified number of characters as shown 
+    cout<<str.substr(0,str.length());// starts printing from index 2 and prints the specified number of characters as shown 
     // str.insert(2,"&");//inserts given symbol at the specified index 
     // cout<<str;
     // str.find("l");
-    str.erase(1,3);//erases 3 elements after index 1
-    cout<<str;
+    // str.erase(1,3);//erases 3 elements after index 1
+    // cout<<str;
 }
